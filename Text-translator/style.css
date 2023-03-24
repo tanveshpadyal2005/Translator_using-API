@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2023/02/07/14/45/translation-7774314_960_720.jpg");
+    background-color: aquamarine;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+
+.trans {
+    width: 65%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 10px 10px 10px;
+    flex-wrap: wrap;
+    backdrop-filter: blur(8px) rgb(255, 164, 164);
+}
+
+
+.trans h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trans h1 span {
+    font-size: 1rem;
+    color: rgb(0, 255, 247);
+}
+
+.trans form textarea {
+    max-width: 21rem;
+    min-width: 21rem;
+    max-height: 12rem;
+    min-height: 12rem;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.trans form textarea:focus {
+    outline: none;
+    background-color: rgb(200, 255, 213);
+
+}
+
+.trans form input[type="text"]::content {
+    text-align: justify;
+}
+
+
+
+.trans form span {
+    display: inline-block;
+    width: 21rem;
+    height: 12rem;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    background-color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.align select {
+    width: 21rem;
+    height: 2.5rem;
+    margin-bottom: 5px;
+    border-radius: 10px 10px 0 0;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.trans input[type="submit"] {
+    width: 10rem;
+    height: 2.7rem;
+    color: white;
+    background-color: rgb(0, 208, 255);
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.trans input[type="submit"]:hover{
+    background-color: gray;
+}
+
+@media (max-width:1045px) {
+    .trans h1 {
+        font-size: 3rem;
+    }
+
+    .trans {
+        padding: 5rem 22px 22px 22px;
+    }
+}
+
+@media (max-width:570px) {
+    .trans h1 {
+        font-size: 2rem;
+        line-height: 30px;
+    }
+
+    .trans form textarea {
+        max-width: 18rem;
+        min-width: 18rem;
+        max-height: 10rem;
+        min-height: 10rem;
+    }
+
+    .trans form span {
+        width: 18rem;
+        height: 10rem;
+    }
+
+    .align select {
+        width: 18rem;
+        height: 2.6rem;
+        font-size: 15px;
+    }
+
+    .trans input[type="submit"]{
+        font-size: 15px;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width:500px) {
+    .trans{
+        width: 100%;
+    }
+
+    .trans input[type="submit"]{
+        font-size: 15px;
+        margin-left: 19%;
+    }
+}
